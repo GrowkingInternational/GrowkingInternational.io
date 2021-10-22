@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquriy Form</title>
+    <link rel="stylesheet" href="C:\Users\anand\OneDrive\Desktop\Growking Project\static\css\boostrap.min.css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="C:\Users\anand\OneDrive\Desktop\Growking Project\static\css\style.css">
+
+    <script src="C:\Users\anand\OneDrive\Desktop\Growking Project\static\js\jquery-3.3.1.js"></script>
+    <script src="C:\Users\anand\OneDrive\Desktop\Growking Project\static\js\popper.min.js"></script>
+    <script src="C:\Users\anand\OneDrive\Desktop\Growking Project\static\js\bootstarp.min.js"></script>
+	
+	<script>
+	
+			function gotowhatsapp(){
+				var name = document.getElementById("name").value;
+				var mobile = document.getElementById("mobile").value;
+				var email = document.getElementById("email").value;
+				var country = document.getElementById("country").value;
+				var address = document.getElementById("address").value;
+				var website = document.getElementById("website").value;
+				var product = document.getElementById("product").value;
+				var message = document.getElementById("message").value;
+				var text = ` Name = ${name} 
+Mobile = ${mobile} 
+Email-Id = ${email} 
+Country = ${country} 
+Address = ${address} 
+Website = ${website} 
+Product_Enquiry = ${product} 
+Message = ${message}  `
+				var url = "https://wa.me/919511266629?text="+"   Enquiry Details  " + "%0a"
+				+"Name: " + name + "%0a"
+				+ "Mobile No.: " + mobile + "%0a"
+				+ "Email-Id: " + email + "%0a"
+				+ "Country: " + country + "%0a"
+				+ "Address: " + address + "%0a"
+				+ "Website: " + website + "%0a"
+				+ "Product_Enquiry: " + product + "%0a"
+				+ "Message: " + message + "%0a"
+				;
+				window.open(url, '_blank').focus();
+			}
+		</script>
+    </head>
+    
+    <body>
+	     <div id="header"><nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
+<a class="navbar-brand" href="index.html">
+  <img src="C:\Users\anand\OneDrive\Desktop\Growking Project\static\img\logo\l.png" class="d-inline-block align-top navLogo" alt="">
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="aboutus.html">About Us</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Products
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="Spices.html">Spices</a>
+        <a class="dropdown-item" href="Processed.html">Processed</a>
+        <a class="dropdown-item" href="Fresh.html">Fresh</a>
+    </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Enquiry.html">Enquiry</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="contactus.html">Contact Us</a>
+    </li>
+  </ul>
+</div>
+</nav></div>
+    <div style="height: 60px;"></div>
+    <div style="height: 60px;"></div>
+		<br>
+		<br>
+		
+		
+        <section>
+            <div class="container">
+                <h1 class="text-uppercase text-center">Enquiry</h1>
+                <br>
+                <p class="text-center" style="font-size: 18px;">
+                     Our team is happy to answer your enquiries about our products.  <br>
+                     Fill out the form and we'll be in touch as soon as possible. 
+                </p>
+                <br>
+                <br>
+                <div class="form_border p-5">
+                    <p style="color:red;">*Required</p>
+                    <br>
+                    <form method="post">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="name">Name <span style="color: red;">*</span></label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter name here" name="name" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="mobile">Mobile <span style="color: red;">*</span></label>
+                                <input type="tel" class="form-control" id="mobile" placeholder="Enter mobile number here" name="mobile" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="email">Email <span style="color: red;">*</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email address here" name="email" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="country">Country <span style="color: red;">*</span></label>
+                                <input type="text" class="form-control" id="country" placeholder="Enter Country here" name="country" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputAddress">Address </label>
+                                <input type="text" class="form-control" id="address" placeholder="Enter address here" name="address">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="website">Website </label>
+                                <input type="text" class="form-control" id="website" placeholder="Enter website URL here" name="website">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="product">
+                                Product Enquiry for <span style="color: red;">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="product" placeholder="For which product is this enquiry for?" name="product"  required  > 
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="message">
+                                Message
+                            </label>
+                            <textarea type="text" class="form-control" id="message" placeholder="Enter your message here" rows=5 value name="message"></textarea>
+                        </div>
+                        <br>
+                        <button class="btn button" id="subButton" onclick="gotowhatsapp()">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+		<br>
+		<br>
+		<br>
+<div id="footer"><button class="btn topButton buttonDisplay" onclick="goToTop()">
+    <i class="fa fa-arrow-up"></i>
+  </button>
+<footer class="page-footer font-small unique-color-dark text-white" style="background-color: rgba(217, 217, 217, 0.8);">
+      <div style="background-image: linear-gradient(-65deg, #ff4d4d, #e60000);">
+        <div class="container">
+          <!-- Grid row-->
+          <div class="row py-4 d-flex align-items-center">
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+              <h6 class="mb-0">Get connected with us on social networks!</h6>
+            </div>
+            <div class="col-md-6 col-lg-7 text-center text-md-right" style="font-size: 34px;">
+              <!-- Facebook -->
+              <a href="https://www.facebook.com/Growking-International-110422174683046/" target="_blank" class="fb-ic">
+                <i class="fa fa-facebook-f white-text mr-4"> </i>
+              </a>
+              <!--Linkedin -->
+              <a href="https://instagram.com/growking_international?utm_medium=copy_link" onMouseOver="this.style.color='#800080'"
+				onMouseOut="this.style.color='#FFFFFF'" target="_blank" class="li-ic">
+                <i class="fa fa-instagram white-text mr-4"> </i>
+              </a>
+              <!-- WhatsApp -->
+              <a href="https://api.whatsapp.com/send?phone=+919511266629" onMouseOver="this.style.color='#8ebf42'"
+				onMouseOut="this.style.color='#FFFFFF'" target="_blank" class="tw-ic">
+                <i class="fa fa-whatsapp white-text"> </i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center text-md-left mt-5" style="color: black;">
+        <div class="row mt-3">
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 pt-5">
+            <img src="C:\Users\anand\OneDrive\Desktop\Growking Project\static\img\logo\l8.png" style="width: 100%;height: auto;" alt="">
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">Products</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: black;">
+            <p class="footerTextAlign">
+              <a style="color: black;" href="Spices.html">Spices</a>
+            </p>
+            <p class="footerTextAlign">
+              <a style="color: black;" href="Processed.html">Processed</a>
+            </p>
+            <p class="footerTextAlign">
+              <a style="color: black;" href="Fresh.html">Fresh</a>
+            </p>
+           
+           
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: black;">
+            <p class="footerTextAlign">
+              <a style="color: black;" href="C:\Users\anand\OneDrive\Desktop\Growking Project\Enquiry.html">Enquiry</a>
+            </p>
+            <p class="footerTextAlign">
+              <a style="color: black;" href="aboutus.html">About Us</a>
+            </p>
+            <p class="footerTextAlign">
+              <a style="color: black;" href="contactus.html">Contact Us</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase font-weight-bold">Contact</h6>
+            <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: black;">
+            <p class="footerTextAlign">
+              <i class="fa fa-envelope mr-3" style="font-size: 20px;"></i>info@growinternational.com 
+            </p>
+            <p class="footerTextAlign">
+              <i class="fa fa-phone mr-3" style="font-size: 20px;"></i> + 91
+			  9511266629
+            </p>
+
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright text-center py-3" style="color: black;">
+        © 2021 Copyright:
+        <a style="color: blue;" href="https://hamsaoverseas.com/"> growking_international.com </a>
+      </div>
+    </footer></div>
+
+    <script src="./static/js/main.js"></script>
+		
+    </body>
+</html>

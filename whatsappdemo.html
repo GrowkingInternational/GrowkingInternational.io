@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<script>
+			function gotowhatsapp(){
+				var name = document.getElementById("nm").value;
+				var addr = document.getElementById("addr").value;
+				var url = "https://wa.me/919881232444?text=" 
+    + "Name: " + name + "%0a"
+    + "Phone: " + addr + "%0a";
+	window.open(url, '_blank').focus();
+			}
+		</script>
+	</head>
+	<body>
+		<form>
+			Name:<input type="text" name="nm" id="nm"><br>
+			Address:<input type="text" name="addr" id="addr"><br>
+			<input type="button" value="Kishan ke dil me only pooja" onclick="gotowhatsapp()">
+		</form>
+	</body>
+</html>
